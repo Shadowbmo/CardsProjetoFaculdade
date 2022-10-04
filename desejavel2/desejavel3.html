@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./desejavel2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     
+      <!-- Linkando o site font Awesorme para pegar os icones -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+      <!-- Linkando o CSS -->
+      <link rel="stylesheet" href="./desejavel.css">
+</head>
+
+<body>
+    <div class="containerGrafico">
+        <div class="navegacao">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icone"> <img src="./img/iconeGrafico.png" width="20px"> </span>
+                        <span class="titulo"> Graficos </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/iconeHistorico.png" width="20px"> </span>
+                        <span class="titulo"> Historico </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"> <img src="./img/iconeAdicionar.png" width="20px"> </span>
+                        <span class="titulo"> Adionar Responsavel</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/iconeChat.png" width="20px"></span>
+                        <span class="titulo"> Messagem </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/iconeSuporte.png" width="20px"> </span>
+                        <span class="titulo"> Ajuda </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/Configuracoes.png" width="20px"> </span>
+                        <span class="titulo"> Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/BotaodeSair.png" width="20px"> </span>
+                        <span class="titulo"> Sair </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<!--Menu-->
+<div class="menu">
+    <div class="barra-de-cima">
+        <div class="toggle">
+            <img src="./img/iconeMenu.png" width="20px">
+        </div>
+        <div>
+            <img src="./img/melvsLogo.png" alt="">
+        </div>
+        <div class="usuario">
+            <img src="./img/icone_perfil.png">
+        </div>
+    </div>
+    <!--KPI'S-->
+    <div class="caixas">
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome">Média Temperatura diária </div>
+                <div class="KPI-numeros">20°C</div>
+            </div>
+        </div>
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome"> Temperatura máxima </div>
+                <div class="KPI-numeros">26°C</div>
+            </div>
+        </div>
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome"> Média da umidade diária</div>
+                <div class="KPI-numeros">62%</div>
+            </div>
+        </div>
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome"> Umidade máxima </div>
+                <div class="KPI-numeros">70%</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Graficos-->
+    <section>
+           <div class="body">
+               <!-- Div que engloba todas as divs -->
+              <div class="container">
+          
+                  <!-- Div que tem o conteudo em si -->
+                 <div class="conteudo">
+          
+                      <!-- Div que tem todo o quadrado ou cada card (ou cada post-it) -->
+                    <div class="card">
+          
+                       <!-- Counteudo que tem em cada card (ou post-it)-->
+                      <div class="conteudo-card">
+          
+                           <!-- Div que contem a imagem (aquela bola)-->
+                          <div class="imagem">
+          
+                                <!-- imagem que vai ficar na bola do card-->
+                              <img src="./img/Dashboard.png">
+          
+                          </div>
+          
+                            <!-- Div que contem os icones-->
+                           <div class="icones">
+                               <!-- icones que estão linkados com o Font Awesorme-->
+                              <i class="fa-sharp fa-solid fa-phone"></i>
+                              <i class="fa-sharp fa-solid fa-envelope"></i>
+                              <i class="fa-sharp fa-solid fa-comment"></i>
+                          </div>
+          
+                            <!-- Div que contem o nome do armazem -->
+                          <div class="nome-do-armazem-e-sua-descrisao">
+                              <span class="nome-do-armazem">Armazem nª1</span>
+                              <span class="descrisao-do-armazem">armazem do subsolo</span>
+                              <span> <i class="fa-solid fa-circle-info"></i> </span>
+                          </div>
+          
+                             <!-- Div que contem o status do armazem -->
+                           <div class="status-armazem1">
+                              <span>Tem algum problema</span> 
+                           </div>
+          
+                              <!-- Div que tem o botão -->
+                           <div class="botao1">
+                              <button >    Visualizar Armazem    </button>
+                           </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+                                             <!--Dei varios crlt c e clrt v -->
+          <!--***********************************************************************************************************-->
+          
+             <!-- Div que engloba todas as divs -->
+             <div class="container">
+          
+              <!-- Div que tem o conteudo em si -->
+             <div class="conteudo">
+          
+                  <!-- Div que tem todo o quadrado ou cada card (ou cada post-it) -->
+                <div class="card">
+          
+                   <!-- Counteudo que tem em cada card (ou post-it)-->
+                  <div class="conteudo-card">
+          
+                       <!-- Div que contem a imagem (aquela bola)-->
+                      <div class="imagem">
+          
+                            <!-- imagem que vai ficar na bola do card-->
+                          <img src="./img/Dashboard.png">
+          
+                      </div>
+          
+                        <!-- Div que contem os icones-->
+                       <div class="icones">
+                           <!-- icones que estão linkados com o Font Awesorme-->
+                          <i class="fa-sharp fa-solid fa-phone"></i>
+                          <i class="fa-sharp fa-solid fa-envelope"></i>
+                          <i class="fa-sharp fa-solid fa-comment"></i>
+                      </div>
+          
+                        <!-- Div que contem o nome do armazem -->
+                      <div class="nome-do-armazem-e-sua-descrisao">
+                          <span class="nome-do-armazem">Armazem nª2</span>
+                          <span class="descrisao-do-armazem">Armazem no Andar 1</span>
+                          <span> <i class="fa-solid fa-circle-info"></i> </span>
+                      </div>
+          
+                         <!-- Div que contem o status do armazem -->
+                       <div class="status-armazem">
+                          <span>seu armazen está tranquilo</span> 
+                       </div>
+          
+                          <!-- Div que tem o botão -->
+                       <div class="botao">
+                          <button >    Visualizar Armazem    </button>
+                       </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+            <!-- Div que engloba todas as divs -->
+              <div class="container">
+          
+                  <!-- Div que tem o conteudo em si -->
+                 <div class="conteudo">
+          
+                      <!-- Div que tem todo o quadrado ou cada card (ou cada post-it) -->
+                    <div class="card">
+          
+                       <!-- Counteudo que tem em cada card (ou post-it)-->
+                      <div class="conteudo-card">
+          
+                           <!-- Div que contem a imagem (aquela bola)-->
+                          <div class="imagem">
+          
+                                <!-- imagem que vai ficar na bola do card-->
+                              <img src="./img/Dashboard.png">
+          
+                          </div>
+          
+                            <!-- Div que contem os icones-->
+                           <div class="icones">
+                               <!-- icones que estão linkados com o Font Awesorme-->
+                              <i class="fa-sharp fa-solid fa-phone"></i>
+                              <i class="fa-sharp fa-solid fa-envelope"></i>
+                              <i class="fa-sharp fa-solid fa-comment"></i>
+                          </div>
+          
+                            <!-- Div que contem o nome do armazem -->
+                          <div class="nome-do-armazem-e-sua-descrisao">
+                              <span class="nome-do-armazem">Armazem nª3</span>
+                              <span class="descrisao-do-armazem">Armazem Principal</span>
+                              <span> <i class="fa-solid fa-circle-info"></i> </span>
+                          </div>
+          
+                             <!-- Div que contem o status do armazem -->
+                           <div class="status-armazem">
+                              <span>seu armazen está tranquilo</span> 
+                           </div>
+          
+                              <!-- Div que tem o botão -->
+                           <div class="botao">
+                              <button >    Visualizar Armazem    </button>
+                           </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+                <!-- Div que engloba todas as divs -->
+                <div class="container">
+          
+                  <!-- Div que tem o conteudo em si -->
+                 <div class="conteudo">
+          
+                      <!-- Div que tem todo o quadrado ou cada card (ou cada post-it) -->
+                    <div class="card">
+          
+                       <!-- Counteudo que tem em cada card (ou post-it)-->
+                      <div class="conteudo-card">
+          
+                           <!-- Div que contem a imagem (aquela bola)-->
+                          <div class="imagem">
+          
+                                <!-- imagem que vai ficar na bola do card-->
+                              <img src="./img/Dashboard.png">
+          
+                          </div>
+          
+                            <!-- Div que contem os icones-->
+                           <div class="icones">
+                               <!-- icones que estão linkados com o Font Awesorme-->
+                              <i class="fa-sharp fa-solid fa-phone"></i>
+                              <i class="fa-sharp fa-solid fa-envelope"></i>
+                              <i class="fa-sharp fa-solid fa-comment"></i>
+                          </div>
+          
+                            <!-- Div que contem o nome do armazem -->
+                          <div class="nome-do-armazem-e-sua-descrisao">
+                              <span class="nome-do-armazem">Armazem nª4</span>
+                              <span class="descrisao-do-armazem">armazem da rua paulista</span>
+                              <span> <i class="fa-solid fa-circle-info"></i> </span>
+                          </div>
+          
+                             <!-- Div que contem o status do armazem -->
+                           <div class="status-armazem">
+                              <span>seu armazen está tranquilo</span> 
+                           </div>
+          
+                              <!-- Div que tem o botão -->
+                           <div class="botao">
+                              <button >    Visualizar Armazem    </button>
+                           </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+              </section>
+           </div>
+
+</div>
+
+</html>
+
+
+
+<script>
+    //deixar o menu toggle 
+    let toggle = document.querySelector('.toggle');
+    let navegacao = document.querySelector('.navegacao');
+    let menu = document.querySelector('.menu');
+
+    toggle.onclick = function () {
+        navegacao.classList.toggle('ativar');
+        menu.classList.toggle('ativar');
+    }
+</script>

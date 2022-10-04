@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.card {
+    background: rgb(17,199,111);
+    background:  linear-gradient(to bottom, rgba(23, 233, 131, 0.5333) 54%, rgb(239, 240, 232) 83%);
+    border-radius: 20px;
+    position: relative;
+    margin: 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.card .conteudo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+
+.card .icones i {
+    color: #054A29 ;
+    opacity: 0.5;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.card .nome-do-armazem-e-sua-descrisao {
+    position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+ color: #054A29;
+}
+
+.nome-do-armazem-e-sua-descrisao .nome-do-armazem{
+     font-size: 20px;
+     font-weight: 600;
+}
+
+.nome-do-armazem-e-sua-descrisao .descrisao-do-armazem{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card .status-armazem {
+    color: #11C76F;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.nome-do-armazem-e-sua-descrisao i {
+    color:#11C76F ;
+    opacity: 0.6;
+}
+
+.card .botao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+
+}
+.card .botao1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.card .botao button{
+   color: #054A29;
+   background-color: #D9D9D9;
+   border: none;
+   padding: 8px 22px;
+   border-radius: 20px;
+   font-size: 15px;
+   cursor: pointer;
+}
+
+.card .botao1 button{
+    color: #054A29;
+    background-color: #f3322fcb;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ 
+
+.card .status-armazem1 {
+    color: #f3322fcb;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 15px;
+}
+/************************************************************************************************************ */
+
+/* dando opacidade para quando o mouser passar por cima  */
+/* dando opacidade para os icones de Email/Telefone/Chat  */
+.card .icones i:hover{
+    opacity: 1;
+}
+
+/* dando opacidade para quando o icone do I informativo */
+.nome-do-armazem-e-sua-descrisao i:hover{
+    opacity: 1;
+}
+
+/* dando opacidade para quando o botão */
+.botao button:hover{
+  opacity: 0.6 ;
+}
+
+.botao1 button:hover{
+    opacity: 0.6 ;
+  }
+
+/************************************************************************************************************ */
+
+
+/*Comandos que tem que ser alterados por alguma div quando for transcrevidos  */
+.body {
+    height: 70%;
+    display: flex;
+    background-color: #eff0e8d5  ;
+    position: relative;
+    margin: 15px;
+}
+
+/*Comandos que tem que ser alterados por alguma div quando for transcrevidos  */
+
+/************************************************************************************************************ */
+
+/* comandos no section (prescisa ser alterado pela div) */
+/* Aqui está deixando redondo aquela parte que fica a imagem */
+section .card .imagem{
+    height: 140px;
+    width: 140px;
+    border-radius: 20px;
+    padding: 3px;
+    background-color: #11C76F;
+    position: relative;
+
+   }
+   
+   
+   section .card .imagem img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        border: 3px solid #FFF;
+        position: relative;
+
+   }
+   
+
+   .container{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: #eff0e8d5;
+   }

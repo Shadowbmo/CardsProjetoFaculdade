@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./desejavel2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="containerGrafico">
+        <div class="navegacao">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icone"> <img src="./img/iconeGrafico.png" width="20px"> </span>
+                        <span class="titulo"> Graficos </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/iconeHistorico.png" width="20px"> </span>
+                        <span class="titulo"> Historico </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"> <img src="./img/iconeAdicionar.png" width="20px"> </span>
+                        <span class="titulo"> Adionar Responsavel</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/iconeChat.png" width="20px"></span>
+                        <span class="titulo"> Messagem </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/iconeSuporte.png" width="20px"> </span>
+                        <span class="titulo"> Ajuda </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/Configuracoes.png" width="20px"> </span>
+                        <span class="titulo"> Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><img src="./img/BotaodeSair.png" width="20px"> </span>
+                        <span class="titulo"> Sair </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<!--Menu-->
+<div class="menu">
+    <div class="barra-de-cima">
+        <div class="toggle">
+            <img src="./img/iconeMenu.png" width="20px">
+        </div>
+        <div>
+            <img src="./img/melvsLogo.png" alt="">
+        </div>
+        <div class="usuario">
+            <img src="./img/icone_perfil.png">
+        </div>
+    </div>
+    <!--KPI'S-->
+    <div class="caixas">
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome">Média Temperatura diária </div>
+                <div class="KPI-numeros">20°C</div>
+            </div>
+        </div>
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome"> Temperatura máxima </div>
+                <div class="KPI-numeros">26°C</div>
+            </div>
+        </div>
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome"> Média da umidade diária</div>
+                <div class="KPI-numeros">62%</div>
+            </div>
+        </div>
+        <div class="caixa">
+            <div>
+                <div class="KPI-nome"> Umidade máxima </div>
+                <div class="KPI-numeros">70%</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Graficos-->
+    <div class="graficos">
+        <div class="grafico_de_linha">
+            <canvas id="grafico_linha"></canvas>
+        </div>
+        <div class="grafico_de_barra">
+            <canvas id="grafico_barra"></canvas>
+        </div>
+    </div>
+
+</div>
+
+</html>
+
+<!--GRAFICO 1-->
+
+<script>
+    const labels = [
+        '00:00',
+        '01:00',
+        '02:00',
+        '03:00',
+        '04:00',
+        '05:00',
+        '06:00',
+        '07:00',
+        '08:00',
+        '09:00',
+        '10:00',
+        '11:00',
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+        '18:00',
+        '19:00',
+        '20:00',
+        '21:00',
+        '22:00',
+        '23:00',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Tempertatura',
+            backgroundColor: 'rgb(170, 0, 0)',
+            borderColor: 'rgb(170, 0, 0)',
+            data: [20, 21, 19, 19, 18, 18.5, 18, 19, 20, 19, 21, 23, 25, 26, 24, 25, 23, 22, 22, 20, 19, 20, 18, 19],
+        }, {
+            label: 'Umidade',
+            backgroundColor: 'rgb(0, 0, 172)',
+            borderColor: 'rgb(0, 0, 172)',
+            data: [65, 63, 65, 67, 70, 65, 62, 60, 57, 60, 58, 57, 55, 58, 60, 62, 59, 56, 54, 52, 50, 53, 55, 57],
+        }
+        ]
+    };
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+</script>
+<script>
+
+    const myChart = new Chart(
+        document.getElementById('grafico_linha'),
+        config
+    );
+</script>
+
+<!--GRAFICO 2-->
+<script>
+    const labels2 = [
+        'semana 1',
+        'semana 2',
+        'semana 3',
+        'semana',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Tempertatura Média',
+            backgroundColor: 'rgb(170, 0, 0)',
+            borderColor: 'rgb(170, 0, 0)',
+            data: [20, 21, 19, 19],
+        }, {
+            label: 'Umidade Média',
+            backgroundColor: 'rgb(0, 0, 172)',
+            borderColor: 'rgb(0, 0, 172)',
+            data: [65, 63, 65, 67],
+        }
+        ]
+    };
+    const config2 = {
+        type: 'bar',
+        data: data2,
+        options: {}
+    };
+
+</script>
+<script>
+    const myChart1 = new Chart(
+        document.getElementById('grafico_barra'),
+        config2
+    );
+</script>
+
+<script>
+    //deixar o menu toggle 
+    let toggle = document.querySelector('.toggle');
+    let navegacao = document.querySelector('.navegacao');
+    let menu = document.querySelector('.menu');
+
+    toggle.onclick = function () {
+        navegacao.classList.toggle('ativar');
+        menu.classList.toggle('ativar');
+    }
+</script>

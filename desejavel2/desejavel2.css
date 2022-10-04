@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #eff0e8d5;
+}
+
+.containerGrafico {
+    position: relative;
+    width: 100%;
+}
+
+.navegacao {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #11C76F;
+    border-left: 3px solid #11C76F;
+    overflow: hidden;
+    transition: 0.5s;
+} 
+
+.navegacao ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.navegacao ul li {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* hover */
+
+.navegacao ul li:hover{
+  background:rgba(23, 233, 132, 0.701);
+}
+
+.caixas .caixa:hover{
+    background: #11C76F;
+    opacity: 0.8;
+}
+
+.caixas .caixa:hover .KPI-numeros{
+    color: black;
+    font-weight: bold;
+
+}
+
+
+.caixas .caixa:hover .KPI-nome{
+    color: black;
+    font-weight: bold;
+}
+
+
+.navegacao ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #054A29;
+
+}
+
+.navegacao ul li a .icone{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+
+.navegacao ul li a .titulo{
+    position: relative;
+    display: block;
+    padding:0 10pxs ;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+.menu{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    transition: 0.5s;
+    background-color: #eff0e8d5;
+    min-height: 100vh;
+}
+
+.barra-de-cima {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #eff0e8d5;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #eff0e8d5;
+    font-size: 2.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.usuario {
+    position: relative;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    width: 40px;
+}
+
+.usuario img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover  ;
+}
+
+
+.caixas {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixas .caixa {
+    margin: 5px;
+    position: relative;
+    background-color: #eff0e8f0;
+    padding: 30px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.caixas .caixa .KPI-nome {
+    position: relative;
+    color: #054A29;
+    text-align: center;
+}
+.caixas .caixa .KPI-numeros {
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Graficos */
+.graficos {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.grafico_de_linha{
+    position: relative;
+    width: 50%;
+
+}
+
+.grafico_de_barra{
+    position: relative;
+    width: 50%;
+
+}
+
+/* tag ativar */ 
+.navegacao.ativar {
+ width: 60px;
+}
+
+.menu.ativar {
+ width: calc(100% - 80px);
+ left: 80px;   
+}
